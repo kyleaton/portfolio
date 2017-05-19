@@ -12,10 +12,10 @@ nav {
       line-height: normal;
     }
   }
-
+  font-weight: 500;
+  box-shadow:none;
   color: $navbar-font-color;
   @extend .z-depth-1;
-  background-color: $primary-color;
   width: 100%;
   height: $navbar-height-mobile;
   line-height: $navbar-line-height-mobile;
@@ -58,7 +58,6 @@ nav {
 
   // Logo
   .brand-logo {
-    position: absolute;
     color: $navbar-font-color;
     display: inline-block;
     font-size: $navbar-brand-font-size;

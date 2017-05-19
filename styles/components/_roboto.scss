@@ -15,13 +15,13 @@
 @font-face {
     font-family: "Avenir Next";
     src: local(Avenir Next Demi Bold),
-        url("#{$avenirnext-font-path}avenirnextdemibolditalic.woff") format("woff");
+        url("#{$avenirnext-font-path}avenirnextdemibold.woff") format("woff");
     font-weight: 600;
 }
 
 @font-face {
     font-family: "Avenir Next";
     src: local(Avenir Next Bold),
-        url("#{$avenirnext-font-path}avenirnextbolditalic.woff") format("woff");
+        url("#{$avenirnext-font-path}avenirnextbold.woff") format("woff");
     font-weight: 700;
 }

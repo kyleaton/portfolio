@@ -1,0 +1,27 @@
+/*Feature Cards*/
+
+.feature-card-holder {
+	max-width: 800px;
+}
+
+.feature-card{
+	border-radius:4px;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+	background-size: 595px;
+	background-repeat: repeat;
+	background-position: center;
+	color: #FFF;
+}
+
+.leapcure-bkg {
+	background-color: $portfolioBlue;
+	background-image: url("#{$image-path}leapcure-texture.png");
+}
+.daymaker-bkg {	
+	background-color: $portfolioGreen;
+	background-image: url("#{$image-path}daymaker-pattern.png");
+}
+.sanguine-bkg {
+	background-color: $portfolioDarkBlue;
+	background-image: url("#{$image-path}leapcure-texture.png");
+}

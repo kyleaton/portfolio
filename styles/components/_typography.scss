@@ -18,12 +18,11 @@ html{
     font-size: 15px;
   }
 
-  font-family: "Georgia", sans-serif;
+  font-family: "Avenir Next", sans-serif;
   font-weight: normal;
   color: $off-black;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Avenir Next", sans-serif;
 	line-height: 1.1;
 }
 
@@ -45,7 +44,9 @@ h5 { font-size: $h5-fontsize; line-height: 110%; margin: ($h5-fontsize / 2) 0 ($
 h6 { font-size: $h6-fontsize; line-height: 110%; margin: ($h6-fontsize / 2) 0 ($h6-fontsize / 2.5) 0;}
 
 // BODY Styles
-
+p {
+  font-family: "Georgia", sans-serif;
+}
 
 
 // Text Styles

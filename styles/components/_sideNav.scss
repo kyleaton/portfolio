@@ -34,7 +34,7 @@
   li {
     float: none;
     line-height: $sidenav-line-height;
-
+    font-weight: 600;
     &.active { background-color: rgba(0,0,0,.05); }
   }
 
