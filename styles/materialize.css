@@ -3083,10 +3083,22 @@ nav ul a span.badge {
       .row .col.push-xl12 {
         left: 100%; } }
 
+/*flexbox*/
+@media only screen and (min-width: 601px) {
+  .flexbox-md {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden; } }
+
+@media only screen and (min-width: 601px) {
+  .flexbox-md .col {
+    flex: 1; } }
+
 nav {
   font-weight: 500;
   box-shadow: none;
-  color: #717171;
+  color: #484848;
   width: 100%;
   height: 56px;
   line-height: 56px; }
@@ -3099,7 +3111,7 @@ nav {
       position: relative;
       line-height: normal; }
   nav a {
-    color: #717171; }
+    color: #484848; }
   nav i,
   nav [class^="mdi-"], nav [class*="mdi-"],
   nav i.material-icons {
@@ -3123,7 +3135,7 @@ nav {
       height: 56px;
       line-height: 56px; }
   nav .brand-logo {
-    color: #717171;
+    color: #484848;
     display: inline-block;
     font-size: 1.7rem;
     padding: 0;
@@ -3166,7 +3178,7 @@ nav {
     nav ul a {
       transition: background-color .3s;
       font-size: 1.2rem;
-      color: #717171;
+      color: #484848;
       display: block;
       padding: 0 15px;
       cursor: pointer; }
@@ -3201,7 +3213,7 @@ nav {
         color: rgba(255, 255, 255, 0.7);
         transition: color .3s; }
       nav .input-field label.active i {
-        color: #717171; }
+        color: #484848; }
 
 .navbar-fixed {
   position: relative;
@@ -3243,25 +3255,24 @@ html {
   line-height: 1.5;
   font-family: "Avenir Next", sans-serif;
   font-weight: normal;
-  color: rgba(0, 0, 0, 0.87); }
+  color: #404040; }
   @media only screen and (min-width: 0) {
     html {
       font-size: 14px; } }
   @media only screen and (min-width: 992px) {
     html {
-      font-size: 14.5px; } }
+      font-size: 15px; } }
   @media only screen and (min-width: 1200px) {
     html {
       font-size: 15px; } }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.1; }
-
-h1 {
-  font-weight: 600; }
-
-h2 {
+  line-height: 1.1;
   font-weight: 500; }
+
+h5 {
+  font-style: italic;
+  font-weight: 400; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: inherit; }
@@ -3277,9 +3288,10 @@ h2 {
   margin: 1.78rem 0 1.424rem 0; }
 
 h3 {
-  font-size: 2.92rem;
+  font-size: 1.8rem;
   line-height: 110%;
-  margin: 1.46rem 0 1.168rem 0; }
+  margin: 0.9rem 0 0.72rem 0;
+  margin-bottom: 22px; }
 
 h4 {
   font-size: 2.28rem;
@@ -3287,23 +3299,24 @@ h4 {
   margin: 1.14rem 0 0.912rem 0; }
 
 h5 {
-  font-size: 1.64rem;
+  font-size: 1.4rem;
   line-height: 110%;
-  margin: 0.82rem 0 0.656rem 0; }
+  margin: 0.7rem 0 0.56rem 0;
+  margin-bottom: 5px; }
 
 h6 {
   font-size: 1rem;
   line-height: 110%;
   margin: 0.5rem 0 0.4rem 0; }
 
-p {
+p, li {
   font-family: "Georgia", sans-serif; }
 
 em {
   font-style: italic; }
 
 strong {
-  font-weight: 500; }
+  font-weight: 700; }
 
 small {
   font-size: 75%; }
@@ -3313,6 +3326,9 @@ small {
 
 .thin {
   font-weight: 200; }
+
+.study p {
+  text-align: justify; }
 
 .flow-text {
   font-weight: 300; }
@@ -3675,6 +3691,7 @@ small {
   display: inline-block;
   height: 36px;
   line-height: 36px;
+  letter-spacing: 1px;
   padding: 0 2rem;
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent; }
@@ -3719,8 +3736,8 @@ small {
 .btn-floating,
 .btn-large,
 .btn-flat {
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 1.4rem;
+  font-weight: 400;
   outline: 0; }
   .btn i, .btn-large i,
   .btn-floating i,
@@ -3738,7 +3755,7 @@ small {
   color: #fff;
   background-color: #45D2B2;
   text-align: center;
-  letter-spacing: .5px;
+  letter-spacing: 1.2px;
   transition: .2s ease-out;
   cursor: pointer; }
   .btn:hover, .btn-large:hover {
@@ -3888,6 +3905,13 @@ button.btn-floating {
 
 .btn-block {
   display: block; }
+
+.btn-blue {
+  background-color: #43ACEB; }
+  .btn-blue:hover {
+    background-color: #5ab6ed; }
+  .btn-blue:focus {
+    background-color: #1897e3; }
 
 .dropdown-content {
   background-color: #fff;
@@ -6009,6 +6033,11 @@ input[type=range]:focus::-ms-fill-upper {
   bottom: 0;
   right: 0; }
 
+.p-lr {
+  position: absolute;
+  left: 0;
+  right: 0; }
+
 .p-bl {
   position: absolute;
   bottom: 0;
@@ -6490,27 +6519,94 @@ ul.li-m-r-md > li, .m-r-md {
 
 /*Feature Cards*/
 .feature-card-holder {
-  max-width: 800px; }
+  max-width: 750px; }
 
 .feature-card {
-  border-radius: 4px;
+  border-radius: 0px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  background-size: 595px;
+  background-size: 770px;
   background-repeat: repeat;
   background-position: center;
-  color: #FFF; }
+  color: #FFF;
+  font-size: 20px;
+  transition: box-shadow .25s; }
+  .feature-card:hover {
+    transition: box-shadow .25s;
+    box-shadow: 0 4px 12px 2px rgba(0, 0, 0, 0.35); }
+  @media only screen and (min-width: 601px) {
+    .feature-card {
+      border-radius: 4px; } }
 
 .leapcure-bkg {
   background-color: #3796CF;
-  background-image: url("../images/leapcure-texture.png"); }
+  background-image: url("../images/leapcure-texture2.png"); }
 
 .daymaker-bkg {
   background-color: #42BFA3;
-  background-image: url("../images/daymaker-pattern.png"); }
+  background-image: url("../images/daymaker-pattern5.png");
+  background-size: 595px !important; }
 
 .sanguine-bkg {
   background-color: #4E586B;
   background-image: url("../images/leapcure-texture.png"); }
+
+/*Logos*/
+.logo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 50px; }
+  @media only screen and (min-width: 601px) {
+    .logo {
+      height: 57px; } }
+
+@media only screen and (min-width: 601px) {
+  .feature-card .logo {
+    background-position: left center; } }
+
+.leapcure-logo {
+  background-image: url("../images/leapcure-logo.svg"); }
+
+.daymaker-logo {
+  background-image: url("../images/daymaker-logo.png"); }
+
+.sanguine-logo {
+  background-image: url("../images/sanguine-logo.png");
+  height: 60px !important; }
+  @media only screen and (min-width: 601px) {
+    .sanguine-logo {
+      background-position: left center;
+      height: 72px !important; } }
+
+/*jumbotron*/
+.jumbotron {
+  height: 250px;
+  background-size: 90%;
+  background-repeat: repeat;
+  background-position: center; }
+
+.jumbotron a {
+  color: #fff;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 85px;
+  font-weight: 500;
+  position: absolute;
+  top: 220px;
+  left: 0;
+  right: 0; }
+
+.jumbotron .logo {
+  height: 90px; }
+
+/*IMAGES*/
+@media only screen and (min-width: 601px) {
+  .image-wrapper {
+    max-width: 600px; } }
+
+.image-holder img {
+  border: 1px solid #45d2b2; }
 
 /* ==========================================================================
    $BASE-PICKER

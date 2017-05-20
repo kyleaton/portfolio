@@ -1,0 +1,11 @@
+/*IMAGES*/
+
+.image-wrapper {
+	@media #{$medium-and-up} {
+		max-width: 600px;
+	}
+}
+
+.image-holder img {
+	border: 1px solid #45d2b2;
+}

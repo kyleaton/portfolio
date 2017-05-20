@@ -1,0 +1,16 @@
+/*flexbox*/
+
+
+.flexbox-md {
+	@media #{$medium-and-up} {
+	  display: -webkit-flex;
+	  display: -ms-flexbox;
+	  display: flex;
+	  overflow: hidden;
+	}
+}
+.flexbox-md .col {
+		@media #{$medium-and-up} {
+  	flex: 1;
+	}
+}

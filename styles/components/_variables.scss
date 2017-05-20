@@ -56,7 +56,7 @@ $badge-height: 22px !default;
 // Shared styles
 $button-border: none !default;
 $button-background-focus: lighten($secondary-color, 4%) !default;
-$button-font-size: 1.2rem !default;
+$button-font-size: 1.4rem !default;
 $button-icon-font-size: 1.3rem !default;
 $button-height: 36px !default;
 $button-padding: 0 2rem !default;
@@ -70,6 +70,9 @@ $button-disabled-color: #9F9F9F !default;
 $button-raised-background: $secondary-color !default;
 $button-raised-background-hover: lighten($button-raised-background, 5%) !default;
 $button-raised-color: #fff !default;
+$blue-button-raised-background: $btnBlue !default;
+$blue-button-raised-background-hover: lighten($blue-button-raised-background, 5%) !default;
+$blue-button-raised-color: #fff !default;
 
 // Large buttons
 $button-large-icon-font-size: 46px !default;
@@ -226,7 +229,7 @@ $navbar-line-height: $navbar-height !default;
 $navbar-height-mobile: 56px !default;
 $navbar-line-height-mobile: $navbar-height-mobile !default;
 $navbar-font-size: 1.2rem !default;
-$navbar-font-color: #717171 !default;
+$navbar-font-color: #484848 !default;
 $navbar-brand-font-size: 1.7rem !default;
 
 // 14. Side Navigation
@@ -284,9 +287,9 @@ $off-black: rgba(0, 0, 0, 0.87) !default;
 // Header Styles
 $h1-fontsize: 4.2rem !default;
 $h2-fontsize: 3.56rem !default;
-$h3-fontsize: 2.92rem !default;
+$h3-fontsize: 1.8rem !default;
 $h4-fontsize: 2.28rem !default;
-$h5-fontsize: 1.64rem !default;
+$h5-fontsize: 1.4rem !default;
 $h6-fontsize: 1rem !default;
 
 

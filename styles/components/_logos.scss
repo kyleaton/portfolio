@@ -1,0 +1,36 @@
+/*Logos*/
+
+.logo {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 50px;
+	@media #{$medium-and-up} {
+		height: 57px;		
+	}
+}
+
+.feature-card .logo{
+	@media #{$medium-and-up} {
+		background-position: left center;
+	}
+}
+
+
+.leapcure-logo{
+	background-image: url("#{$image-path}leapcure-logo.svg");
+}
+
+.daymaker-logo{
+	background-image: url("#{$image-path}daymaker-logo.png");
+}
+
+.sanguine-logo{
+	background-image: url("#{$image-path}sanguine-logo.png");
+	height: 60px !important;
+	@media #{$medium-and-up} {
+		background-position: left center;
+		height: 72px !important;		
+	}
+}
