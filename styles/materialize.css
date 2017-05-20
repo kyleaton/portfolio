@@ -3310,7 +3310,13 @@ h6 {
   margin: 0.5rem 0 0.4rem 0; }
 
 p, li {
-  font-family: "Georgia", sans-serif; }
+  font-family: "Georgia", serif; }
+
+nav li {
+  font-family: "Avenir Next", sans-serif; }
+
+a {
+  cursor: pointer; }
 
 em {
   font-style: italic; }
@@ -6569,7 +6575,7 @@ ul.li-m-r-md > li, .m-r-md {
   background-image: url("../images/leapcure-logo.svg"); }
 
 .daymaker-logo {
-  background-image: url("../images/daymaker-logo.png"); }
+  background-image: url("../images/daymaker-logo.svg"); }
 
 .sanguine-logo {
   background-image: url("../images/sanguine-logo.png");
