@@ -3301,8 +3301,8 @@ h4 {
 h5 {
   font-size: 1.4rem;
   line-height: 110%;
-  margin: 0.7rem 0 0.56rem 0;
-  margin-bottom: 5px; }
+  margin: 1.5em 0 0.56rem 0;
+  margin-bottom: 10px; }
 
 h6 {
   font-size: 1rem;
@@ -3334,7 +3334,8 @@ small {
   font-weight: 200; }
 
 .study p {
-  text-align: justify; }
+  text-align: justify;
+  margin: 10px 0; }
 
 .flow-text {
   font-weight: 300; }
@@ -6604,7 +6605,8 @@ ul.li-m-r-md > li, .m-r-md {
   right: 0; }
 
 .jumbotron .logo {
-  height: 90px; }
+  height: 90px;
+  background-position: center; }
 
 /*IMAGES*/
 @media only screen and (min-width: 601px) {
@@ -6613,6 +6615,9 @@ ul.li-m-r-md > li, .m-r-md {
 
 .image-holder img {
   border: 1px solid #45d2b2; }
+
+.no-border img {
+  border: none; }
 
 /* ==========================================================================
    $BASE-PICKER

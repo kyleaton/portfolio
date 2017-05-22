@@ -37,7 +37,7 @@ h1 { font-size: $h1-fontsize; line-height: 110%; margin: ($h1-fontsize / 2) 0 ($
 h2 { font-size: $h2-fontsize; line-height: 110%; margin: ($h2-fontsize / 2) 0 ($h2-fontsize / 2.5) 0;}
 h3 { font-size: $h3-fontsize; line-height: 110%; margin: ($h3-fontsize / 2) 0 ($h3-fontsize / 2.5) 0; margin-bottom:22px;}
 h4 { font-size: $h4-fontsize; line-height: 110%; margin: ($h4-fontsize / 2) 0 ($h4-fontsize / 2.5) 0;}
-h5 { font-size: $h5-fontsize; line-height: 110%; margin: ($h5-fontsize / 2) 0 ($h5-fontsize / 2.5) 0; margin-bottom:5px;}
+h5 { font-size: $h5-fontsize; line-height: 110%; margin: 1.5em 0 ($h5-fontsize / 2.5) 0; margin-bottom:10px;}
 h6 { font-size: $h6-fontsize; line-height: 110%; margin: ($h6-fontsize / 2) 0 ($h6-fontsize / 2.5) 0;}
 
 // BODY Styles
@@ -62,6 +62,7 @@ small { font-size: 75%; }
 
 .study p{
   text-align: justify;
+  margin: 10px 0;
 }
 
 .flow-text{
