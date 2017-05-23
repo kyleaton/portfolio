@@ -1963,8 +1963,14 @@ html {
 
 ul:not(.browser-default) {
   padding-left: 0;
-  list-style-type: none; }
+  list-style-type: disc; }
   ul:not(.browser-default) li {
+    list-style-type: disc; }
+
+nav ul:not(.browser-default) {
+  padding-left: 0;
+  list-style-type: none; }
+  nav ul:not(.browser-default) li {
     list-style-type: none; }
 
 a {
@@ -2516,6 +2522,12 @@ nav ul a span.badge {
   max-width: 1280px;
   width: 90%; }
 
+@media only screen and (min-width: 601px) {
+  .visible-xs {
+    display: none; } }
+@media only screen and (max-width: 600px) {
+  .hidden-xs {
+    display: none; } }
 @media only screen and (min-width: 601px) {
   .container {
     width: 85%; } }
@@ -3333,7 +3345,7 @@ small {
 .thin {
   font-weight: 200; }
 
-.study p {
+.study p, .about p {
   text-align: justify;
   margin: 10px 0; }
 
@@ -3702,6 +3714,9 @@ small {
   padding: 0 2rem;
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent; }
+
+.button {
+  border: none !important; }
 
 .btn.disabled, .disabled.btn-large,
 .btn-floating.disabled,

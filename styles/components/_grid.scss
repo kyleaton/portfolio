@@ -3,6 +3,18 @@
   max-width: 1280px;
   width: 90%;
 }
+
+@media #{$medium-and-up} {
+  .visible-xs {
+    display: none;
+  }
+}
+@media #{$small-and-down} {
+  .hidden-xs {
+    display: none;
+  }
+}
+
 @media #{$medium-and-up} {
   .container {
     width: 85%;
