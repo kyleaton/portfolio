@@ -1,14 +1,19 @@
 <html>
   <head>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="styles/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="styles/custom.css" type="text/css" rel="stylesheet" media="screen,projection">
   </head>
 
-  <body class="study">
+  <body>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/bin/materialize.min.js"></script>  
+    <script type="text/javascript" src="js/bin/materialize.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/sideNav.js"></script>
+    <script type="text/javascript" src="js/analytics.js"></script>
 
     <div class="navbar-fixed">
       <nav>
@@ -18,8 +23,8 @@
           <ul class="right hidden-xs">
             <li><a href="index.html">Work</a></li>
             <li><a href="about-me.html">About Me</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a class="typeform-share" href="https://kyle307.typeform.com/to/YBDD8V" data-mode="1" target="_blank">Contact</a></li>
+            <li><a href="resume-kyle-eaton.pdf">Resume</a></li>
+            <li><a href="contact-me">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -29,8 +34,8 @@
       <li>&nbsp</li>
       <li><a href="index.html">Work</a></li>
       <li><a href="about-me.html">About Me</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a class="typeform-share" href="https://kyle307.typeform.com/to/YBDD8V" data-mode="1" target="_blank">Contact</a></li>
+      <li><a href="resume-kyle-eaton.pdf">Resume</a></li>
+      <li><a href="contact-me">Contact</a></li>
     </ul>
     </nav>
 
@@ -48,7 +53,7 @@
           Daymaker is the friend that always knows the cool new restaurant, bar or event that’s happening. It helps you find things to do, but more than that — it will create an entire itinerary for you, lasting anywhere from a couple of hours to an entire day. 
         </p>
         <p>
-          Itineraries take into account things like meal times, operating hours and location, ensuring that each day will make sense. They also include easy links to purchase tickets where necessary, and instant directions to each item on your agenda.
+          Itineraries take into account factors like meal times, operating hours and location, ensuring that each day will make sense. They also include easy links to purchase tickets where necessary, and instant directions to each item on your agenda.
         </p>
         <p>
           Daymaker makes planning a great day easy. It also makes it fun.
@@ -58,22 +63,22 @@
         <h3 class="m-b">Role: User Experience Lead</h3>
         <h5>Main Responsibilities:</h5>
         <ul class="m-x m-t-0">
-          <li>Wire-framing, sketching, low fidelity mocks to complete designs.</li>
-          <li>Front end development (HTML, SCSS, Javascript).</li>
-          <li>Planning the infrastructure of and analyzing analytics.</li>
-          <li>Planning and designing A/B tests.</li>
-          <li>Collecting user feedback.</li>
-          <li>Design investor decks. </li>
+          <li>Wire-framing, sketching, low fidelity mocks to complete designs</li>
+          <li>Front end development (HTML, SCSS, Javascript)</li>
+          <li>Planning the infrastructure of and analyzing analytics</li>
+          <li>Planning and designing A/B tests</li>
+          <li>Collecting user feedback</li>
+          <li>Design investor decks</li>
         </ul>
       </div>
       <div class="row width100 left">
         <h3>Process (UX)</h3>
         <h5>Problem:</h5>
         <p class="m-x m-t-0">
-          Finding things to do, even in the city you live in, is a challenge and more so when traveling to a new city. Just to find an event users open copious tabs from multiple websites. If they want to find something to eat or drink before or after the event they open up yelp and go through the same process.
+          Finding things to do, even in the city you live in, is a challenge and even more so when traveling to a new city. To find a single event, users open copious tabs from multiple websites. If they want to find something to eat or drink before or after the event they open up Yelp and undergo the same process.
         </p>
         <p class="m-x">
-          Just the discovery process for things to do is a long arduous task and then you need to consider the logistics of timing travel, buying tickets and making reservations. 
+          The discovery process for things to do is a long arduous task and then you need to consider the logistics of timing travel, buying tickets and making reservations. 
         </p>
 
         <h5>Proposed Solution:</h5>
@@ -83,16 +88,16 @@
 
         <h5>Discovery, Testing and a Pivot:</h5>
         <p class="m-x m-t-0">
-          Before diving head first into what Daymaker is today we spent hours in many brainstorming sessions thinking about how people plan their days. 
+          Before diving head first into what Daymaker is today, we spent hours in many brainstorming sessions conceptualizing how people plan their days. 
         </p>
         <p class="m-x">
-          Originally we came up with 20 question survey where you select your preference between two events at a time (e.g., A rock concert or an opera). Based on your answers, we would send you restaurants, events and other things to do.
+          Originally we came up with a 20 question survey in which you select your preference between two events at a time (e.g., a rock concert or an opera). Based on your answers, we would send you restaurants, events and other things to do.
         </p>
         <p class="m-x">
           We received positive feedback but we wanted to think of something more ambitious.
         </p>
         <p class="m-x">
-          That’s when we came up with the idea of creating a tool that help you discover things to do and create a perfect itinerary with those discoveries.
+          That’s when we came up with the idea of creating a tool that helps you discover things to do and create a perfect itinerary with those discoveries.
         </p>
         <h5>Proposed Solution:</h5>
         <p class="m-x m-t-0">
@@ -103,25 +108,24 @@
       <div class="image-holder width100 left m-y-md">
         <strong><p>Day Creation Tool Ideas:</p></strong>
         <div class="image-wrapper m-x-auto">
-          <img src="images/daymaker-study/vertical-ux.jpg" class="responsive-img">
+          <img src="images/daymaker-study/vertical-ux.jpg" class="responsive-img materialboxed">
         </div>
         <div class="image-wrapper m-x-auto m-t-md">
-          <img src="images/daymaker-study/horizontal-ux.jpg" class="responsive-img">
+          <img src="images/daymaker-study/horizontal-ux.jpg" class="responsive-img materialboxed">
         </div>
       </div>
 
       <div class="image-holder width100 left m-y-md">
         <strong><p>Itinerary Low Fidelity Mocks:</p></strong>
         <div class="image-wrapper m-x-auto">
-          <img src="images/daymaker-study/itinerary-mock.jpg" class="responsive-img">
+          <img src="images/daymaker-study/itinerary-mock.jpg" class="responsive-img materialboxed">
         </div>
       </div>
 
        <div class="row left width100 m-t-lg">
         <h5>Polished Design & Prototyping:</h5>
         <p class="m-x m-t-0">
-         After coming to a consensus on features and functionality, I created more polished designs that an engineer and I started developing.
-         While we were developing, I created a landing page showing the functionality of the app with images and animations along with a form asking for emails from users who were interested in the product and wanted to be notified when it was released.
+          After reaching a consensus on features and functionality, I created more polished designs that an engineer and I began developing. While we were developing, I created a landing page showing the functionality of the app with images and animations, along with a form asking for emails from interested users.
         </p>
         <p class="m-x">
           *The Day Creation and Itinerary prototypes of these designs are live at <a href="https://daymaker.com/">www.mydaymaker.com</a> and the landing page is live <a href="http://broker-vivian-38061.bitballoon.com/">here</a>
@@ -131,73 +135,73 @@
       <div class="image-holder width100 left m-y-md">
         <strong><p>Landing Page Demo Screen:</p></strong>
         <div class="image-wrapper m-x-auto">
-          <img src="images/daymaker-study/smoke-test.png" class="responsive-img">
+          <img src="images/daymaker-study/smoke-test.png" class="responsive-img materialboxed">
         </div>
       </div>
 
       <div class="image-holder no-border width100 left m-y-md">
         <strong><p>Day Creation Prototype:</p></strong>
         <div class="image-wrapper m-x-auto">
-          <img src="images/daymaker-study/day-creation-prototype.jpg" class="responsive-img">
+          <img src="images/daymaker-study/day-creation-prototype.jpg" class="responsive-img materialboxed">
         </div>
       </div>
 
       <div class="image-holder no-border width100 left m-y-md">
         <strong><p>Itinerary Prototype:</p></strong>
         <div class="image-wrapper m-x-auto">
-          <img src="images/daymaker-study/itinerary-prototype.jpg" class="responsive-img">
+          <img src="images/daymaker-study/itinerary-prototype.jpg" class="responsive-img materialboxed">
         </div>
       </div>
 
       <div class="row left width100 m-t-lg">
         <h5>Event Tracking Implementation:</h5>
         <p class="m-x m-t-0">
-          Using a combination of Google Analytics, Mixpanel and Inspectlet we are able to diagnose problems within the user experience efficiently. The data we obtain from these applications allow us to make very educated decision on how to improve the product. Here’s how:
+          Using a combination of Google Analytics, Mixpanel and Inspectlet we are able to diagnose problems within the user experience efficiently. The data we obtain from these applications allow us to make educated decisions on how to improve the product. Here’s how:
         </p>  
         <p class="m-x">
-          <strong>Google Analytics (top of the funnel):</strong> We use Google Analytics mostly to track the success of our acquisition methods (e.g., Facebook, Instagram, Google search, etc). By using UTM tags in our links we can see which ads or social media posts acquire the most users.
+          <strong>Google Analytics (top of the funnel):</strong> Google Analytics is used to track the success of our acquisition methods (e.g., Facebook, Instagram, Google search, etc). By using UTM tags in links, the ads or social media posts that acquire the most users are identified.
         </p>
         <p class="m-x">
-          <strong>Mixpanel (mid to bottom of funnel):</strong> Mixpanel is great for tracking user activity once they started to interact with your site. We use Mixpanel to see which steps in the funnel, from landing on the page to signing up, users are having trouble with.
+          <strong>Mixpanel (mid to bottom of funnel):</strong> Mixpanel is great for tracking user activity once interaction is initiated with the site. Mixpanel is used to see which steps in the funnel, from landing on the page to signing up, users are having trouble with.
         </p>
         <p class="m-x">
-          After users have signed up, you can segment users by how they interact with the site, their location, what ad brought them in and use those segments to send more personalized messages through Mixpanel to help re-engage your users.
+          After users have signed up, segmentation of users based on how they interact with the site, their location, what ad brought them in can occur. These segments can be utliized in order to send more personalized messages through Mixpanel to help re-engage the users.
         </p>
         <p class="m-x">
-          <strong>Inspectlet (User videos):</strong> Inspectlet takes videos of sessions on the site. After recognizing a problem in the funnel using Mixpanel, I would watch these sessions and see what exactly the user is having problems with. This really helps us conclude if we have a technical problem or a design problem.
+          <strong>Inspectlet (User videos):</strong> Inspectlet records videos of sessions on the site. After recognizing a problem in the funnel using Mixpanel, these sessions are reviewed to understand what exactly the user is having difficulties with. This helps conclude if there is a technical problem or a design problem.
         </p>
 
         <h5>Initial Testing:</h5>
         <p class="m-x m-t-0">
-          We set up some Facebook ads to get performance data through Google Analytics, Mixpanel and our A/B tests, but what we learned the most from in a short period of time and a limited ad budget was a service called Userbrain.
+          We set up some Facebook ads to get performance data through Google Analytics, Mixpanel and our A/B tests, but we learned the most from in a short period of time and a limited ad budget was a service called Userbrain.
         </p>
         <p class="m-x">
-          Userbrain is a service where you can give a prompt to testers (e.g., "Click around the website tell us what you think it does.") and you watch the tester use your product while they think out loud and give feedback.
+          Userbrain is a service with which you can provide a prompt to testers (e.g., "Click around the website and tell us what you think it does.") and you can subsequently observe the tester use the product while they think out loud and give feedback.
         </p>
         <p class="m-x">
-          Feedback on the product was very positive and the testers tended to be very enthusiastic about it.
+          Feedback on the product was very positive and the testers tended to be enthusiastic about it.
         </p>
 
         <h5>Diagnosising Low Key Metric Results:</h5>
         <p class="m-x m-t-0">
-          After putting the core idea of the product live (the day creation tool plus saved itineraries) we noticed our key metric, email submissions, was not meeting our goal. while diving analytics I found that our successful users started to engage with the product in the way that we intended after two or three minutes of use. This is a very long time to maintain user attention and interest, it is much more likely someone would bounce in that time than stick around and learn something new.
+          After putting the core idea of the product live (the day creation tool plus saved itineraries) we noticed our key metric, email submission, was not meeting our goal. While exploring analytics I found that our successful users started to engage with the product in the way that we intended after two or three minutes of use. This is a very long time to maintain user attention and interest and it is much more likely a user would bounce in that time than stick around and learn something new.
         </p>
         <h5>Solving The Issue:</h5>
         <p class="m-x m-t-0">
-          In order for us to get emails we needed users to save an itinerary which, as explained above, takes a good bit of effort.
+          In order for us to collect emails, we needed users to save an itinerary, which, as explained above, takes a good bit of effort.
         </p>
         <p class="m-x">
-          The decision to solve this was to create other reasons for users to give us their emails sooner, along with showing them value before reaching the day creation tool. We decided to implement features that users are accustom to seeing in our industry, giving them comfort in familiarity.
+          We now knew we needed to create alternative reasons for users to provide their emails sooner, along with showing them value before reaching the day creation tool. We decided to implement features that users are accustom to seeing in our industry, giving them comfort in familiarity.
         </p>
         <h5>New Features:</h5>
         <p class="m-x m-t-0">
           In creating the new features we wanted to help acquisition along with boosting our engagement and retention metrics.
         </p>
         <p class="m-x">
-          With acquisition in mind we created event pages, venue pages and “Best Things to do…” type blogs. These pages not only function as attractive content for advertising and sharing on social media platforms but also succeeded in increasing our SEO greatly, giving us some page one results on Google.
+          With acquisition in mind, we created event pages, venue pages and “Best Things to do…” type blogs. These pages not only function as attractive content for advertising and sharing on social media platforms but also succeeded in dramatically increasing our SEO, giving us some page one results on Google.
         </p>
         <p class="m-x">
-          Focusing on retention, we created a weekly email sending users the best events for each week and the ability to “favorite” events, blogs, and venues to a user dashboard for later day planning. Favoriting any piece of content requires a user to sign up and give us their email.
+          Focusing on retention, we created a weekly email to send users the best events for each week and the ability to “favorite” events, blogs, and venues to a user dashboard for later day planning. Favoriting any piece of content requires a user to sign up and provide an email.
         </p>
         <p class="m-x">
           *All of these designs are live. See them in action at <a href="https://daymaker.com/">www.mydaymaker.com</a>
@@ -207,55 +211,55 @@
       <div class="image-holder no-border width100 left m-y-md">
         <strong><p>Dynamic Homepage:</p></strong>
         <div class="image-wrapper m-x-auto">
-          <img src="images/daymaker-study/homepage.jpg" class="responsive-img">
+          <img src="images/daymaker-study/homepage.jpg" class="responsive-img materialboxed">
         </div>
       </div>
       
       <div class="image-holder no-border width100 left m-y-md">
         <strong><p>"Favoriting" & Favorites Dashboard:</p></strong>
         <div style="max-width:339px" class="image-wrapper m-x-auto">
-          <img src="images/daymaker-study/favoriting.jpg" class="responsive-img">
+          <img src="images/daymaker-study/favoriting.jpg" class="responsive-img materialboxed">
         </div>
         <div class="image-wrapper m-x-auto m-t-lg p-t-lg">
-          <img src="images/daymaker-study/dashboard.jpg" class="responsive-img">
+          <img src="images/daymaker-study/dashboard.jpg" class="responsive-img materialboxed">
         </div>
       </div>
 
       <div class="image-holder no-border width100 left m-y-md">
         <strong><p>Event Directory & Venue Directory:</p></strong>
         <div class="image-wrapper m-x-auto">
-          <img src="images/daymaker-study/venues-directory.jpg" class="responsive-img">
+          <img src="images/daymaker-study/venues-directory.jpg" class="responsive-img materialboxed">
         </div>
       </div>
 
       <div class="image-holder no-border width100 left m-y-md">
         <strong><p>Event & Venue Pages:</p></strong>
         <div class="image-wrapper m-x-auto">
-          <img src="images/daymaker-study/event-page.jpg" class="responsive-img">
+          <img src="images/daymaker-study/event-page.jpg" class="responsive-img materialboxed">
         </div>
         <div class="image-wrapper m-x-auto m-t-lg p-t-lg">
-          <img src="images/daymaker-study/venue-page.jpg" class="responsive-img">
+          <img src="images/daymaker-study/venue-page.jpg" class="responsive-img materialboxed">
         </div>
       </div>
 
       <div class="image-holder no-border width100 left m-y-md">
         <strong><p>"Best Things to Do" Blogs:</p></strong>
         <div class="image-wrapper m-x-auto">
-          <img src="images/daymaker-study/blog.jpg" class="responsive-img">
+          <img src="images/daymaker-study/blog.jpg" class="responsive-img materialboxed">
         </div>
       </div>
 
       <div class="image-holder no-border width100 left m-y-md">
         <strong><p>Weekly Email:</p></strong>
         <div class="image-wrapper m-x-auto">
-          <img src="images/daymaker-study/email.jpg" class="responsive-img">
+          <img src="images/daymaker-study/email.jpg" class="responsive-img materialboxed">
         </div>
       </div>
 
       <div class="row width100 left">
         <h3 class="m-b">Conclusion</h3>
         <p>
-         This is an abbreviated version of our story that does not have an ending. There was a great amount of work and detail that went into our decision making process and plethora of subtle design changes that aren't listed above. If you have any questions about the project feel free to contact me. 
+         This is an abbreviated version of our story that does not have an ending. There was a great amount of work and detail that went into our decision making process and plethora of subtle design changes that aren't listed above. If you have any questions about the project feel free to contact me.
         </p>
       </div>
       <div class="row left width100">
@@ -263,10 +267,10 @@
           <a class="m-r-md xs-m-r-md" target="_blank" href="https://www.linkedin.com/in/kyleweaton/">
             <img src="images/about-images/linkedin.svg">
           </a>
-          <a class="typeform-share" href="https://kyle307.typeform.com/to/YBDD8V" data-mode="1" target="_blank">
+          <a href="contact-me">
             <img src="images/about-images/email.svg">
           </a>
-          <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm_share',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+          
         </div>
       </div>
     </div>
