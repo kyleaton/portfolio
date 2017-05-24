@@ -10,6 +10,30 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/bin/materialize.min.js"></script>  
 
+    <div class="navbar-fixed">
+      <nav>
+        <div class="p-x-md nav-wrapper">
+          <a href="index.html" class="brand-logo p-relative left">Kyle W. Eaton</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse visible-xs m-x-0 right"><i class="material-icons">menu</i></a>
+          <ul class="right hidden-xs">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about-me.html">About Me</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a class="typeform-share" href="https://kyle307.typeform.com/to/YBDD8V" data-mode="1" target="_blank">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <nav style="height:0">
+    <ul class="side-nav p-t-lg" id="mobile-demo">
+      <li>&nbsp</li>
+      <li><a href="index.html">Work</a></li>
+      <li><a href="about-me.html">About Me</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a class="typeform-share" href="https://kyle307.typeform.com/to/YBDD8V" data-mode="1" target="_blank">Contact</a></li>
+    </ul>
+    </nav>
+
     <div class="width100 jumbotron daymaker-bkg valign-wrapper p-x-md">
       <div class="logo daymaker-logo"></div>
       <a href="https://daymaker.com/" class="study-link">
@@ -234,7 +258,17 @@
          This is an abbreviated version of our story that does not have an ending. There was a great amount of work and detail that went into our decision making process and plethora of subtle design changes that aren't listed above. If you have any questions about the project feel free to contact me. 
         </p>
       </div>
-
+      <div class="row left width100">
+        <div style="width:188px" class="m-x-auto hidden-xs">
+          <a class="m-r-md xs-m-r-md" target="_blank" href="https://www.linkedin.com/in/kyleweaton/">
+            <img src="images/about-images/linkedin.svg">
+          </a>
+          <a class="typeform-share" href="https://kyle307.typeform.com/to/YBDD8V" data-mode="1" target="_blank">
+            <img src="images/about-images/email.svg">
+          </a>
+          <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm_share',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+        </div>
+      </div>
     </div>
   </body>
 </html>

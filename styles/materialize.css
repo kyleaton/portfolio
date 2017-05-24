@@ -1956,7 +1956,8 @@ th {
   padding: 0; }
 
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #fbfbfb; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
@@ -3109,6 +3110,7 @@ nav ul a span.badge {
 
 nav {
   font-weight: 500;
+  background-color: #fff;
   box-shadow: none;
   color: #484848;
   width: 100%;
@@ -3244,6 +3246,13 @@ nav {
 
   .navbar-fixed {
     height: 64px; } }
+#sidenav-overlay {
+  display: none !important; }
+
+@font-face {
+  font-family: "Avenir Next";
+  src: local(Avenir Next Thin), url("../fonts/AvenirNext/avenir-next-thin.woff") format("woff");
+  font-weight: 300; }
 @font-face {
   font-family: "Avenir Next";
   src: local(Avenir Next Regular), url("../fonts/AvenirNext/avenirnextregular.woff") format("woff");
@@ -5300,7 +5309,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .side-nav {
   position: fixed;
-  width: 300px;
+  width: 100%;
   left: 0;
   top: 0;
   margin: 0;
@@ -5309,12 +5318,19 @@ input[type=range]:focus::-ms-fill-upper {
   height: calc(100% + 60px);
   height: -moz-calc(100%);
   padding-bottom: 60px;
-  background-color: #fff;
-  z-index: 999;
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.86) 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.86) 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.86) 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db000000', endColorstr='#b3000000',GradientType=1 );
+  /* IE6-9 */
   overflow-y: auto;
   will-change: transform;
   backface-visibility: hidden;
-  transform: translateX(-105%); }
+  transform: translateX(-105%);
+  z-index: 1000; }
   .side-nav.right-aligned {
     right: 0;
     transform: translateX(105%);
@@ -5329,11 +5345,11 @@ input[type=range]:focus::-ms-fill-upper {
     .side-nav li.active {
       background-color: rgba(0, 0, 0, 0.05); }
   .side-nav li > a {
-    color: rgba(0, 0, 0, 0.87);
+    color: #fff;
     display: block;
-    font-size: 14px;
-    font-weight: 500;
-    height: 48px;
+    font-size: 30px;
+    font-weight: 300;
+    height: 60px;
     line-height: 48px;
     padding: 0 32px; }
     .side-nav li > a:hover {
@@ -5361,7 +5377,7 @@ input[type=range]:focus::-ms-fill-upper {
     cursor: initial;
     pointer-events: none;
     color: rgba(0, 0, 0, 0.54);
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 48px; }
     .side-nav .subheader:hover {
@@ -5390,7 +5406,7 @@ input[type=range]:focus::-ms-fill-upper {
       width: 64px; }
     .side-nav .userView .name,
     .side-nav .userView .email {
-      font-size: 14px;
+      font-size: 20px;
       line-height: 24px; }
     .side-nav .userView .name {
       margin-top: 16px;
@@ -5404,7 +5420,7 @@ input[type=range]:focus::-ms-fill-upper {
   width: 10px;
   position: fixed;
   top: 0;
-  z-index: 998; }
+  z-index: 1001; }
 
 .side-nav.fixed {
   left: 0;
@@ -6603,7 +6619,7 @@ ul.li-m-r-md > li, .m-r-md {
 
 /*jumbotron*/
 .jumbotron {
-  height: 250px;
+  height: 300px;
   background-size: 90%;
   background-repeat: repeat;
   background-position: center; }
@@ -6612,10 +6628,9 @@ ul.li-m-r-md > li, .m-r-md {
   color: #fff;
   text-decoration: underline;
   text-align: center;
-  margin-bottom: 85px;
   font-weight: 500;
   position: absolute;
-  top: 220px;
+  top: 320px;
   left: 0;
   right: 0; }
 

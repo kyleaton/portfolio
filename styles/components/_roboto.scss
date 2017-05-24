@@ -1,5 +1,12 @@
 @font-face {
     font-family: "Avenir Next";
+    src: local(Avenir Next Thin), 
+        url("#{$avenirnext-font-path}avenir-next-thin.woff") format("woff");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Avenir Next";
     src: local(Avenir Next Regular), 
         url("#{$avenirnext-font-path}avenirnextregular.woff") format("woff");
     font-weight: 400;

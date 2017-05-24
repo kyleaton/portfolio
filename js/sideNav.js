@@ -3,7 +3,7 @@
   var methods = {
     init : function(options) {
       var defaults = {
-        menuWidth: 300,
+        menuWidth: $(window).width(),
         edge: 'left',
         closeOnClick: false,
         draggable: true
@@ -16,7 +16,7 @@
         var menu = $("#"+ menuId);
 
         // Set to width
-        if (options.menuWidth != 300) {
+        if (options.menuWidth != $(window).width()) {
           menu.css('width', options.menuWidth);
         }
 

@@ -3,3 +3,12 @@
 //     -moz-box-shadow: $args1, $args2;
 //     box-shadow: $args1, $args2;
 // }
+
+@mixin prefix($property, $value, $vendors: webkit moz ms o) {
+  @if $vendors {
+     @each $vendor in $vendors {
+       #{"-" + $vendor + "-" + $property}: #{$value};
+     }
+   }
+   #{$property}: #{$value};
+}

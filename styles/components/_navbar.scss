@@ -13,6 +13,7 @@ nav {
     }
   }
   font-weight: 500;
+  background-color: #fff;
   box-shadow:none;
   color: $navbar-font-color;
   @extend .z-depth-1;
@@ -205,4 +206,8 @@ nav {
   .navbar-fixed {
     height: $navbar-height;
   }
+}
+
+#sidenav-overlay {
+  display: none !important;
 }
